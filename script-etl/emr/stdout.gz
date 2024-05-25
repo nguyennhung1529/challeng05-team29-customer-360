@@ -1,0 +1,222 @@
+ERROR:__main__:Error reading Parquet files from S3: An error occurred while calling o92.parquet.
+: java.lang.AssertionError: assertion failed: Conflicting directory structures detected. Suspicious paths:
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1967
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1979
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1966
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1959
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1971
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1961
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1976
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1965
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1995
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1997
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2001
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1974
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1977
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1946
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1953
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1963
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1948
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1981
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1998
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1955
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1934
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1936
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1956
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1980
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1982
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1973
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1938
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1987
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1984
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1962
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1944
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1958
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1950
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1941
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1972
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1969
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1986
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2002
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1988
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1949
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1992
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1968
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1935
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1951
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2000
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1939
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1999
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1985
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1978
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1994
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1942
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1975
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1964
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1970
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1954
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1996
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1947
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1957
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1960
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1937
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1991
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1990
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1993
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1943
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2006
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2004
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1989
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1940
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1945
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1932
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2003
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2005
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1933
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1952
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1931
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1983
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2007
+
+If provided paths are partition directories, please set "basePath" in the options of the data source to specify the root directory of the table. If there are multiple root directories, please load them separately and then union them.
+	at scala.Predef$.assert(Predef.scala:223)
+	at org.apache.spark.sql.execution.datasources.PartitioningUtils$.parsePartitions(PartitioningUtils.scala:179)
+	at org.apache.spark.sql.execution.datasources.PartitioningUtils$.parsePartitions(PartitioningUtils.scala:111)
+	at org.apache.spark.sql.execution.datasources.PartitioningAwareFileIndex.inferPartitioning(PartitioningAwareFileIndex.scala:202)
+	at org.apache.spark.sql.execution.datasources.InMemoryFileIndex.partitionSpec(InMemoryFileIndex.scala:103)
+	at org.apache.spark.sql.execution.datasources.PartitioningAwareFileIndex.partitionSchema(PartitioningAwareFileIndex.scala:52)
+	at org.apache.spark.sql.execution.datasources.DataSource.getOrInferFileFormatSchema(DataSource.scala:167)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:407)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.parquet(DataFrameReader.scala:563)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Traceback (most recent call last):
+  File "/tmp/spark-010b1860-652f-450f-b8bc-277a0bf4b8f9/hktvpb-emr-customer-summary.py", line 17, in <module>
+    client_df = spark.read.parquet("s3://hktvpb-team29-customer-360/transformed_data/client/*")
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 544, in parquet
+  File "/usr/lib/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+  File "/usr/lib/spark/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 179, in deco
+  File "/usr/lib/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 326, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o92.parquet.
+: java.lang.AssertionError: assertion failed: Conflicting directory structures detected. Suspicious paths:
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1967
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1979
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1966
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1959
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1971
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1961
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1976
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1965
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1995
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1997
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2001
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1974
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1977
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1946
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1953
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1963
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1948
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1981
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1998
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1955
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1934
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1936
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1956
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1980
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1982
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1973
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1938
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1987
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1984
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1962
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1944
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1958
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1950
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1941
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1972
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1969
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1986
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2002
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1988
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1949
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1992
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1968
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1935
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1951
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2000
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1939
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1999
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1985
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1978
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1994
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1942
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1975
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1964
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1970
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1954
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1996
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1947
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1957
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1960
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1937
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1991
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1990
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1993
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1943
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2006
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2004
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1989
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1940
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1945
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1932
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2003
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2005
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1933
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1952
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1931
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=1983
+	s3://hktvpb-team29-customer-360/transformed_data/client/year=2007
+
+If provided paths are partition directories, please set "basePath" in the options of the data source to specify the root directory of the table. If there are multiple root directories, please load them separately and then union them.
+	at scala.Predef$.assert(Predef.scala:223)
+	at org.apache.spark.sql.execution.datasources.PartitioningUtils$.parsePartitions(PartitioningUtils.scala:179)
+	at org.apache.spark.sql.execution.datasources.PartitioningUtils$.parsePartitions(PartitioningUtils.scala:111)
+	at org.apache.spark.sql.execution.datasources.PartitioningAwareFileIndex.inferPartitioning(PartitioningAwareFileIndex.scala:202)
+	at org.apache.spark.sql.execution.datasources.InMemoryFileIndex.partitionSpec(InMemoryFileIndex.scala:103)
+	at org.apache.spark.sql.execution.datasources.PartitioningAwareFileIndex.partitionSchema(PartitioningAwareFileIndex.scala:52)
+	at org.apache.spark.sql.execution.datasources.DataSource.getOrInferFileFormatSchema(DataSource.scala:167)
+	at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:407)
+	at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
+	at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
+	at org.apache.spark.sql.DataFrameReader.parquet(DataFrameReader.scala:563)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+INFO:py4j.clientserver:Closing down clientserver connection

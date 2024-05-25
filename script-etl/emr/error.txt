@@ -1,0 +1,417 @@
+May 24, 2024 6:05:21 AM org.apache.spark.launcher.Log4jHotPatchOption staticJavaAgentOption
+WARNING: spark.log4jHotPatch.enabled is set to true, but /usr/share/log4j-cve-2021-44228-hotpatch/jdk17/Log4jHotPatchFat.jar does not exist at the configured location
+
+24/05/24 06:05:27 INFO SparkContext: Running Spark version 3.5.0-amzn-1
+24/05/24 06:05:27 INFO SparkContext: OS info Linux, 5.10.215-203.850.amzn2.x86_64, amd64
+24/05/24 06:05:27 INFO SparkContext: Java version 17.0.10
+24/05/24 06:05:27 INFO ResourceUtils: ==============================================================
+24/05/24 06:05:27 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/05/24 06:05:27 INFO ResourceUtils: ==============================================================
+24/05/24 06:05:27 INFO SparkContext: Submitted application: Customer 360 Analysis
+24/05/24 06:05:27 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 4, script: , vendor: , memory -> name: memory, amount: 14336, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/05/24 06:05:27 INFO ResourceProfile: Limiting resource is cpus at 4 tasks per executor
+24/05/24 06:05:27 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/05/24 06:05:27 INFO SecurityManager: Changing view acls to: hadoop
+24/05/24 06:05:27 INFO SecurityManager: Changing modify acls to: hadoop
+24/05/24 06:05:27 INFO SecurityManager: Changing view acls groups to: 
+24/05/24 06:05:27 INFO SecurityManager: Changing modify acls groups to: 
+24/05/24 06:05:27 INFO SecurityManager: SecurityManager: authentication enabled; ui acls disabled; users with view permissions: hadoop; groups with view permissions: EMPTY; users with modify permissions: hadoop; groups with modify permissions: EMPTY
+24/05/24 06:05:27 INFO Utils: Successfully started service 'sparkDriver' on port 41531.
+24/05/24 06:05:27 INFO SparkEnv: Registering MapOutputTracker
+24/05/24 06:05:27 INFO SparkEnv: Registering BlockManagerMaster
+24/05/24 06:05:27 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/05/24 06:05:27 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/05/24 06:05:27 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/05/24 06:05:27 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-d7ba4134-8008-44cb-b547-5048b373b102
+24/05/24 06:05:27 INFO MemoryStore: MemoryStore started with capacity 8.2 GiB
+24/05/24 06:05:27 INFO SparkEnv: Registering OutputCommitCoordinator
+24/05/24 06:05:27 INFO SubResultCacheManager: Sub-result caches are disabled.
+24/05/24 06:05:27 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/05/24 06:05:27 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/05/24 06:05:28 INFO Utils: Using initial executors = 3, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+24/05/24 06:05:28 INFO ExecutorContainerAllocator: Set total expected execs to {0=3}
+24/05/24 06:05:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43931.
+24/05/24 06:05:28 INFO NettyBlockTransferService: Server created on [2406:da18:eeb:a002:7188:2140:6636:d222]:43931
+24/05/24 06:05:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/05/24 06:05:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, [2406:da18:eeb:a002:7188:2140:6636:d222], 43931, None)
+24/05/24 06:05:28 INFO BlockManagerMasterEndpoint: Registering block manager [2406:da18:eeb:a002:7188:2140:6636:d222]:43931 with 8.2 GiB RAM, BlockManagerId(driver, [2406:da18:eeb:a002:7188:2140:6636:d222], 43931, None)
+24/05/24 06:05:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, [2406:da18:eeb:a002:7188:2140:6636:d222], 43931, None)
+24/05/24 06:05:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, [2406:da18:eeb:a002:7188:2140:6636:d222], 43931, None)
+24/05/24 06:05:28 INFO ExecutorContainerAllocator: Going to request 3 executors for ResourceProfile Id: 0, target: 3 already provisioned: 0.
+24/05/24 06:05:28 INFO TimeBasedRotatingEventLogFilesWriter: rotationIntervalInSeconds = 300, eventFileMinSize = 1048576, maxFilesToRetain = 2
+24/05/24 06:05:28 INFO DefaultEmrServerlessRMClient: Creating containers with container role SPARK_EXECUTOR and keys: Set(1, 2, 3)
+24/05/24 06:05:28 INFO TimeBasedRotatingEventLogFilesWriter: Logging events to file:/var/log/spark/apps/eventlog_v2_00fjie01p5u0u027/00fjie01p5u0u027.inprogress
+24/05/24 06:05:28 INFO Utils: Using initial executors = 3, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+24/05/24 06:05:28 INFO ExecutorAllocationManager: Dynamic allocation is enabled without a shuffle service.
+24/05/24 06:05:28 INFO ExecutorContainerAllocator: Set total expected execs to {0=3}
+24/05/24 06:05:28 INFO DefaultEmrServerlessRMClient: Containers created with container role SPARK_EXECUTOR. key to container id map: Map(2 -> fac7d499-a5d3-6619-3e1e-01d71bf88c13, 1 -> fec7d499-a5db-67fa-961b-6fc1cab80bb5, 3 -> 56c7d499-a5cb-d8de-b3cb-09c074e45deb)
+24/05/24 06:05:33 INFO EmrServerlessClusterSchedulerBackend$EmrServerlessDriverEndpoint: No executor found for 2406:da18:eeb:a002:674e:5316:fb1e:2f0a:33644
+24/05/24 06:05:33 INFO EmrServerlessClusterSchedulerBackend$EmrServerlessDriverEndpoint: No executor found for 2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa:47064
+24/05/24 06:05:34 INFO EmrServerlessClusterSchedulerBackend$EmrServerlessDriverEndpoint: No executor found for 2406:da18:eeb:a002:abe1:b453:abd6:3cda:59912
+24/05/24 06:05:34 INFO EmrServerlessClusterSchedulerBackend$EmrServerlessDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (2406:da18:eeb:a002:674e:5316:fb1e:2f0a:33648) with ID 2,  ResourceProfileId 0
+24/05/24 06:05:34 INFO ExecutorMonitor: New executor 2 has registered (new total is 1)
+24/05/24 06:05:34 INFO EmrServerlessClusterSchedulerBackend$EmrServerlessDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa:47074) with ID 3,  ResourceProfileId 0
+24/05/24 06:05:34 INFO ExecutorMonitor: New executor 3 has registered (new total is 2)
+24/05/24 06:05:34 INFO BlockManagerMasterEndpoint: Registering block manager [2406:da18:eeb:a002:674e:5316:fb1e:2f0a]:44985 with 7.9 GiB RAM, BlockManagerId(2, [2406:da18:eeb:a002:674e:5316:fb1e:2f0a], 44985, None)
+24/05/24 06:05:34 INFO BlockManagerMasterEndpoint: Registering block manager [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa]:37707 with 7.9 GiB RAM, BlockManagerId(3, [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], 37707, None)
+24/05/24 06:05:34 INFO EmrServerlessClusterSchedulerBackend$EmrServerlessDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (2406:da18:eeb:a002:abe1:b453:abd6:3cda:59924) with ID 1,  ResourceProfileId 0
+24/05/24 06:05:34 INFO ExecutorMonitor: New executor 1 has registered (new total is 3)
+24/05/24 06:05:34 INFO EmrServerlessClusterSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+24/05/24 06:05:34 INFO BlockManagerMasterEndpoint: Registering block manager [2406:da18:eeb:a002:abe1:b453:abd6:3cda]:39341 with 7.9 GiB RAM, BlockManagerId(1, [2406:da18:eeb:a002:abe1:b453:abd6:3cda], 39341, None)
+24/05/24 06:05:35 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+24/05/24 06:05:35 INFO SharedState: Warehouse path is 'file:/home/hadoop/spark-warehouse'.
+24/05/24 06:05:35 INFO HadoopFSUtils: Listing leaf files and directories in parallel under 77 paths. The first several paths are: s3://hktvpb-team29-customer-360/transformed_data/client/year=1931, s3://hktvpb-team29-customer-360/transformed_data/client/year=1932, s3://hktvpb-team29-customer-360/transformed_data/client/year=1933, s3://hktvpb-team29-customer-360/transformed_data/client/year=1934, s3://hktvpb-team29-customer-360/transformed_data/client/year=1935, s3://hktvpb-team29-customer-360/transformed_data/client/year=1936, s3://hktvpb-team29-customer-360/transformed_data/client/year=1937, s3://hktvpb-team29-customer-360/transformed_data/client/year=1938, s3://hktvpb-team29-customer-360/transformed_data/client/year=1939, s3://hktvpb-team29-customer-360/transformed_data/client/year=1940.
+24/05/24 06:05:36 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+24/05/24 06:05:36 INFO DAGScheduler: Got job 0 (parquet at NativeMethodAccessorImpl.java:0) with 77 output partitions
+24/05/24 06:05:36 INFO DAGScheduler: Final stage: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0)
+24/05/24 06:05:36 INFO DAGScheduler: Parents of final stage: List()
+24/05/24 06:05:36 INFO DAGScheduler: Missing parents: List()
+24/05/24 06:05:36 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+24/05/24 06:05:36 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 119.4 KiB, free 8.2 GiB)
+24/05/24 06:05:36 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 44.4 KiB, free 8.2 GiB)
+24/05/24 06:05:36 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on [2406:da18:eeb:a002:7188:2140:6636:d222]:43931 (size: 44.4 KiB, free: 8.2 GiB)
+24/05/24 06:05:36 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1656
+24/05/24 06:05:36 INFO DAGScheduler: Submitting 77 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14))
+24/05/24 06:05:36 INFO TaskSchedulerImpl: Adding task set 0.0 with 77 tasks resource profile 0
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 0, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 1, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 2, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 3, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 4, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 5, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 6.0 in stage 0.0 (TID 6) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 6, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 7.0 in stage 0.0 (TID 7) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 7, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 8.0 in stage 0.0 (TID 8) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 8, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 9.0 in stage 0.0 (TID 9) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 9, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 10.0 in stage 0.0 (TID 10) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 10, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO TaskSetManager: Starting task 11.0 in stage 0.0 (TID 11) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 11, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:36 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a]:44985 (size: 44.4 KiB, free: 7.9 GiB)
+24/05/24 06:05:36 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on [2406:da18:eeb:a002:abe1:b453:abd6:3cda]:39341 (size: 44.4 KiB, free: 7.9 GiB)
+24/05/24 06:05:36 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa]:37707 (size: 44.4 KiB, free: 7.9 GiB)
+24/05/24 06:05:37 INFO ExecutorContainerAllocator: Set total expected execs to {0=4}
+24/05/24 06:05:37 INFO ExecutorAllocationManager: Requesting 1 new executor because tasks are backlogged (new desired total will be 4 for resource profile id: 0)
+24/05/24 06:05:37 INFO TaskSetManager: Starting task 12.0 in stage 0.0 (TID 12) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 12, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:37 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1215 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (1/77)
+24/05/24 06:05:37 INFO TaskSetManager: Starting task 13.0 in stage 0.0 (TID 13) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 13, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:37 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 1221 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (2/77)
+24/05/24 06:05:37 INFO TaskSetManager: Starting task 14.0 in stage 0.0 (TID 14) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 14, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:37 INFO TaskSetManager: Finished task 6.0 in stage 0.0 (TID 6) in 1253 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (3/77)
+24/05/24 06:05:37 INFO ExecutorContainerAllocator: Going to request 1 executors for ResourceProfile Id: 0, target: 4 already provisioned: 3.
+24/05/24 06:05:37 INFO DefaultEmrServerlessRMClient: Creating containers with container role SPARK_EXECUTOR and keys: Set(4)
+24/05/24 06:05:37 INFO TaskSetManager: Starting task 15.0 in stage 0.0 (TID 15) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 15, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:37 WARN DefaultEmrServerlessRMClient: Encountered exception when requesting SPARK_EXECUTOR containers. Future container launch rate will be slowed down until recovered. Next call will be allowed after 2000ms.
+software.amazon.awssdk.services.emrserverlessresourcemanager.model.ServiceQuotaExceededException: Worker could not be allocated as the account has reached the service limit on the maximum vCPU it can use concurrently (Service: EmrServerlessResourceManager, Status Code: 402, Request ID: 41e400de-afbd-4126-a4e3-a5b98b5155c4)
+	at software.amazon.awssdk.core.internal.http.CombinedResponseHandler.handleErrorResponse(CombinedResponseHandler.java:125) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.CombinedResponseHandler.handleResponse(CombinedResponseHandler.java:82) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.CombinedResponseHandler.handle(CombinedResponseHandler.java:60) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.CombinedResponseHandler.handle(CombinedResponseHandler.java:41) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.HandleResponseStage.execute(HandleResponseStage.java:50) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.HandleResponseStage.execute(HandleResponseStage.java:38) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptTimeoutTrackingStage.execute(ApiCallAttemptTimeoutTrackingStage.java:72) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptTimeoutTrackingStage.execute(ApiCallAttemptTimeoutTrackingStage.java:42) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.TimeoutExceptionHandlingStage.execute(TimeoutExceptionHandlingStage.java:78) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.TimeoutExceptionHandlingStage.execute(TimeoutExceptionHandlingStage.java:40) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptMetricCollectionStage.execute(ApiCallAttemptMetricCollectionStage.java:55) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptMetricCollectionStage.execute(ApiCallAttemptMetricCollectionStage.java:39) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:81) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:36) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.StreamManagingStage.execute(StreamManagingStage.java:56) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.StreamManagingStage.execute(StreamManagingStage.java:36) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.executeWithTimer(ApiCallTimeoutTrackingStage.java:80) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.execute(ApiCallTimeoutTrackingStage.java:60) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.execute(ApiCallTimeoutTrackingStage.java:42) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallMetricCollectionStage.execute(ApiCallMetricCollectionStage.java:50) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallMetricCollectionStage.execute(ApiCallMetricCollectionStage.java:32) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ExecutionFailureExceptionReportingStage.execute(ExecutionFailureExceptionReportingStage.java:37) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ExecutionFailureExceptionReportingStage.execute(ExecutionFailureExceptionReportingStage.java:26) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.AmazonSyncHttpClient$RequestExecutionBuilderImpl.execute(AmazonSyncHttpClient.java:224) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.invoke(BaseSyncClientHandler.java:103) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.doExecute(BaseSyncClientHandler.java:173) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.lambda$execute$1(BaseSyncClientHandler.java:80) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.measureApiCallSuccess(BaseSyncClientHandler.java:182) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.execute(BaseSyncClientHandler.java:74) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.client.handler.SdkSyncClientHandler.execute(SdkSyncClientHandler.java:45) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.execute(AwsSyncClientHandler.java:53) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.services.emrserverlessresourcemanager.DefaultEmrServerlessResourceManagerClient.requestContainers(DefaultEmrServerlessResourceManagerClient.java:309) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.deploy.emrserverless.client.DefaultEmrServerlessRMClient.createSingleBatchContainers(DefaultEmrServerlessRMClient.scala:138) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.deploy.emrserverless.client.DefaultEmrServerlessRMClient.$anonfun$createContainers$2(DefaultEmrServerlessRMClient.scala:64) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at scala.collection.Iterator.foreach(Iterator.scala:943) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.Iterator.foreach$(Iterator.scala:943) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431) ~[scala-library-2.12.17.jar:?]
+	at org.apache.spark.deploy.emrserverless.client.DefaultEmrServerlessRMClient.createContainers(DefaultEmrServerlessRMClient.scala:63) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.requestNewExecutors(ExecutorContainerAllocator.scala:329) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.processSingleResourceProfile(ExecutorContainerAllocator.scala:303) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.$anonfun$processExecutorsForAllResourceProfiles$5(ExecutorContainerAllocator.scala:220) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.$anonfun$processExecutorsForAllResourceProfiles$5$adapted(ExecutorContainerAllocator.scala:217) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.Iterator.foreach(Iterator.scala:943) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.Iterator.foreach$(Iterator.scala:943) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108) ~[scala-library-2.12.17.jar:?]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.processExecutorsForAllResourceProfiles(ExecutorContainerAllocator.scala:217) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.onNewSnapshot(ExecutorContainerAllocator.scala:157) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.$anonfun$start$1(ExecutorContainerAllocator.scala:88) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.$anonfun$start$1$adapted(ExecutorContainerAllocator.scala:88) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.store.ExecutorContainerStoreImpl$SnapshotsSubscriber.org$apache$spark$scheduler$cluster$emrserverless$store$ExecutorContainerStoreImpl$SnapshotsSubscriber$$processSnapshotsInternal(ExecutorContainerStoreImpl.scala:190) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.store.ExecutorContainerStoreImpl$SnapshotsSubscriber.processSnapshots(ExecutorContainerStoreImpl.scala:180) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.store.ExecutorContainerStoreImpl.$anonfun$addSubscriber$1(ExecutorContainerStoreImpl.scala:58) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:840) [?:?]
+24/05/24 06:05:37 INFO DefaultEmrServerlessRMClient: Containers created with container role SPARK_EXECUTOR. key to container id map: Map()
+24/05/24 06:05:37 INFO TaskSetManager: Finished task 9.0 in stage 0.0 (TID 9) in 1512 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (4/77)
+24/05/24 06:05:37 INFO TaskSetManager: Starting task 16.0 in stage 0.0 (TID 16) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 16, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:37 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 1530 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (5/77)
+24/05/24 06:05:37 INFO TaskSetManager: Starting task 17.0 in stage 0.0 (TID 17) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 17, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:37 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 1557 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (6/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 18.0 in stage 0.0 (TID 18) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 18, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 1612 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (7/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 19.0 in stage 0.0 (TID 19) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 19, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 20.0 in stage 0.0 (TID 20) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 20, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 21.0 in stage 0.0 (TID 21) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 21, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 13.0 in stage 0.0 (TID 13) in 403 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (8/77)
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 1620 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (9/77)
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 12.0 in stage 0.0 (TID 12) in 448 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (10/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 22.0 in stage 0.0 (TID 22) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 22, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 14.0 in stage 0.0 (TID 14) in 425 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (11/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 23.0 in stage 0.0 (TID 23) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 23, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 7.0 in stage 0.0 (TID 7) in 1850 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (12/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 24.0 in stage 0.0 (TID 24) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 24, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 10.0 in stage 0.0 (TID 10) in 1878 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (13/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 25.0 in stage 0.0 (TID 25) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 25, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 11.0 in stage 0.0 (TID 11) in 1890 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (14/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 26.0 in stage 0.0 (TID 26) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 26, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 27.0 in stage 0.0 (TID 27) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 27, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 8.0 in stage 0.0 (TID 8) in 1901 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (15/77)
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 15.0 in stage 0.0 (TID 15) in 397 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (16/77)
+24/05/24 06:05:38 INFO ExecutorContainerAllocator: Set total expected execs to {0=6}
+24/05/24 06:05:38 INFO ExecutorAllocationManager: Requesting 2 new executors because tasks are backlogged (new desired total will be 6 for resource profile id: 0)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 28.0 in stage 0.0 (TID 28) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 28, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 17.0 in stage 0.0 (TID 17) in 438 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (17/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 29.0 in stage 0.0 (TID 29) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 29, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 20.0 in stage 0.0 (TID 20) in 399 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (18/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 30.0 in stage 0.0 (TID 30) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 30, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 16.0 in stage 0.0 (TID 16) in 505 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (19/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 31.0 in stage 0.0 (TID 31) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 31, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 19.0 in stage 0.0 (TID 19) in 418 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (20/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 32.0 in stage 0.0 (TID 32) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 32, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 22.0 in stage 0.0 (TID 22) in 411 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (21/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 33.0 in stage 0.0 (TID 33) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 33, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 21.0 in stage 0.0 (TID 21) in 489 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (22/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 34.0 in stage 0.0 (TID 34) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 34, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 18.0 in stage 0.0 (TID 18) in 542 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (23/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 35.0 in stage 0.0 (TID 35) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 35, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 24.0 in stage 0.0 (TID 24) in 387 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (24/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 36.0 in stage 0.0 (TID 36) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 36, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 27.0 in stage 0.0 (TID 27) in 416 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (25/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 37.0 in stage 0.0 (TID 37) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 37, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 23.0 in stage 0.0 (TID 23) in 485 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (26/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 38.0 in stage 0.0 (TID 38) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 38, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 25.0 in stage 0.0 (TID 25) in 459 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (27/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 39.0 in stage 0.0 (TID 39) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 39, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 26.0 in stage 0.0 (TID 26) in 470 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (28/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 40.0 in stage 0.0 (TID 40) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 40, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 29.0 in stage 0.0 (TID 29) in 409 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (29/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 41.0 in stage 0.0 (TID 41) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 41, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 31.0 in stage 0.0 (TID 31) in 400 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (30/77)
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 30.0 in stage 0.0 (TID 30) in 412 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (31/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 42.0 in stage 0.0 (TID 42) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 42, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 43.0 in stage 0.0 (TID 43) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 43, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 28.0 in stage 0.0 (TID 28) in 448 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (32/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 44.0 in stage 0.0 (TID 44) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 44, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 32.0 in stage 0.0 (TID 32) in 392 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (33/77)
+24/05/24 06:05:38 INFO TaskSetManager: Starting task 45.0 in stage 0.0 (TID 45) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 45, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:38 INFO TaskSetManager: Finished task 33.0 in stage 0.0 (TID 33) in 461 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (34/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 46.0 in stage 0.0 (TID 46) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 46, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 34.0 in stage 0.0 (TID 34) in 475 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (35/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 47.0 in stage 0.0 (TID 47) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 47, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 36.0 in stage 0.0 (TID 36) in 396 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (36/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 48.0 in stage 0.0 (TID 48) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 48, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 35.0 in stage 0.0 (TID 35) in 452 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (37/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 49.0 in stage 0.0 (TID 49) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 49, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 37.0 in stage 0.0 (TID 37) in 419 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (38/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 50.0 in stage 0.0 (TID 50) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 50, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 38.0 in stage 0.0 (TID 38) in 442 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (39/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 51.0 in stage 0.0 (TID 51) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 51, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 41.0 in stage 0.0 (TID 41) in 406 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (40/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 52.0 in stage 0.0 (TID 52) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 52, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 39.0 in stage 0.0 (TID 39) in 482 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (41/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 53.0 in stage 0.0 (TID 53) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 53, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 54.0 in stage 0.0 (TID 54) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 54, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 43.0 in stage 0.0 (TID 43) in 427 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (42/77)
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 40.0 in stage 0.0 (TID 40) in 448 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (43/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 55.0 in stage 0.0 (TID 55) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 55, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 42.0 in stage 0.0 (TID 42) in 439 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (44/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 56.0 in stage 0.0 (TID 56) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 56, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 44.0 in stage 0.0 (TID 44) in 430 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (45/77)
+24/05/24 06:05:39 INFO ExecutorContainerAllocator: Set total expected execs to {0=8}
+24/05/24 06:05:39 INFO ExecutorAllocationManager: Requesting 2 new executors because tasks are backlogged (new desired total will be 8 for resource profile id: 0)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 57.0 in stage 0.0 (TID 57) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 57, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 45.0 in stage 0.0 (TID 45) in 440 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (46/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 58.0 in stage 0.0 (TID 58) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 58, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 46.0 in stage 0.0 (TID 46) in 475 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (47/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 59.0 in stage 0.0 (TID 59) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 59, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 48.0 in stage 0.0 (TID 48) in 409 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (48/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 60.0 in stage 0.0 (TID 60) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 60, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 47.0 in stage 0.0 (TID 47) in 418 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (49/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 61.0 in stage 0.0 (TID 61) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 61, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 49.0 in stage 0.0 (TID 49) in 408 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (50/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 62.0 in stage 0.0 (TID 62) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 62, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 51.0 in stage 0.0 (TID 51) in 389 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (51/77)
+24/05/24 06:05:39 INFO ExecutorContainerAllocator: Set total expected execs to {0=7}
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 63.0 in stage 0.0 (TID 63) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 63, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 50.0 in stage 0.0 (TID 50) in 435 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (52/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 64.0 in stage 0.0 (TID 64) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 64, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 56.0 in stage 0.0 (TID 56) in 378 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (53/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 65.0 in stage 0.0 (TID 65) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 65, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 52.0 in stage 0.0 (TID 52) in 453 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (54/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 66.0 in stage 0.0 (TID 66) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 66, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 54.0 in stage 0.0 (TID 54) in 443 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (55/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 67.0 in stage 0.0 (TID 67) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 67, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 53.0 in stage 0.0 (TID 53) in 449 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (56/77)
+24/05/24 06:05:39 INFO ExecutorContainerAllocator: Set total expected execs to {0=6}
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 68.0 in stage 0.0 (TID 68) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 68, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 55.0 in stage 0.0 (TID 55) in 516 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (57/77)
+24/05/24 06:05:39 INFO ExecutorContainerAllocator: Set total expected execs to {0=5}
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 69.0 in stage 0.0 (TID 69) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 69, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 57.0 in stage 0.0 (TID 57) in 482 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (58/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 70.0 in stage 0.0 (TID 70) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 70, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 60.0 in stage 0.0 (TID 60) in 373 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (59/77)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 71.0 in stage 0.0 (TID 71) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 71, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO ExecutorContainerAllocator: Going to request 2 executors for ResourceProfile Id: 0, target: 5 already provisioned: 3.
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 59.0 in stage 0.0 (TID 59) in 399 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (60/77)
+24/05/24 06:05:39 INFO DefaultEmrServerlessRMClient: Creating containers with container role SPARK_EXECUTOR and keys: Set(5, 6)
+24/05/24 06:05:39 INFO TaskSetManager: Starting task 72.0 in stage 0.0 (TID 72) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 72, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:39 INFO TaskSetManager: Finished task 61.0 in stage 0.0 (TID 61) in 401 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (61/77)
+24/05/24 06:05:39 WARN DefaultEmrServerlessRMClient: Encountered exception when requesting SPARK_EXECUTOR containers. Future container launch rate will be slowed down until recovered. Next call will be allowed after 3000ms.
+software.amazon.awssdk.services.emrserverlessresourcemanager.model.ServiceQuotaExceededException: Worker could not be allocated as the account has reached the service limit on the maximum vCPU it can use concurrently (Service: EmrServerlessResourceManager, Status Code: 402, Request ID: 629c46d1-10b5-4db2-beb3-7e72c66bb2e7)
+	at software.amazon.awssdk.core.internal.http.CombinedResponseHandler.handleErrorResponse(CombinedResponseHandler.java:125) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.CombinedResponseHandler.handleResponse(CombinedResponseHandler.java:82) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.CombinedResponseHandler.handle(CombinedResponseHandler.java:60) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.CombinedResponseHandler.handle(CombinedResponseHandler.java:41) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.HandleResponseStage.execute(HandleResponseStage.java:50) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.HandleResponseStage.execute(HandleResponseStage.java:38) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptTimeoutTrackingStage.execute(ApiCallAttemptTimeoutTrackingStage.java:72) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptTimeoutTrackingStage.execute(ApiCallAttemptTimeoutTrackingStage.java:42) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.TimeoutExceptionHandlingStage.execute(TimeoutExceptionHandlingStage.java:78) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.TimeoutExceptionHandlingStage.execute(TimeoutExceptionHandlingStage.java:40) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptMetricCollectionStage.execute(ApiCallAttemptMetricCollectionStage.java:55) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallAttemptMetricCollectionStage.execute(ApiCallAttemptMetricCollectionStage.java:39) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:81) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.RetryableStage.execute(RetryableStage.java:36) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.StreamManagingStage.execute(StreamManagingStage.java:56) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.StreamManagingStage.execute(StreamManagingStage.java:36) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.executeWithTimer(ApiCallTimeoutTrackingStage.java:80) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.execute(ApiCallTimeoutTrackingStage.java:60) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallTimeoutTrackingStage.execute(ApiCallTimeoutTrackingStage.java:42) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallMetricCollectionStage.execute(ApiCallMetricCollectionStage.java:50) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ApiCallMetricCollectionStage.execute(ApiCallMetricCollectionStage.java:32) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.RequestPipelineBuilder$ComposingRequestPipelineStage.execute(RequestPipelineBuilder.java:206) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ExecutionFailureExceptionReportingStage.execute(ExecutionFailureExceptionReportingStage.java:37) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.pipeline.stages.ExecutionFailureExceptionReportingStage.execute(ExecutionFailureExceptionReportingStage.java:26) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.http.AmazonSyncHttpClient$RequestExecutionBuilderImpl.execute(AmazonSyncHttpClient.java:224) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.invoke(BaseSyncClientHandler.java:103) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.doExecute(BaseSyncClientHandler.java:173) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.lambda$execute$1(BaseSyncClientHandler.java:80) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.measureApiCallSuccess(BaseSyncClientHandler.java:182) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.internal.handler.BaseSyncClientHandler.execute(BaseSyncClientHandler.java:74) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.core.client.handler.SdkSyncClientHandler.execute(SdkSyncClientHandler.java:45) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.awscore.client.handler.AwsSyncClientHandler.execute(AwsSyncClientHandler.java:53) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at software.amazon.awssdk.services.emrserverlessresourcemanager.DefaultEmrServerlessResourceManagerClient.requestContainers(DefaultEmrServerlessResourceManagerClient.java:309) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.deploy.emrserverless.client.DefaultEmrServerlessRMClient.createSingleBatchContainers(DefaultEmrServerlessRMClient.scala:138) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.deploy.emrserverless.client.DefaultEmrServerlessRMClient.$anonfun$createContainers$2(DefaultEmrServerlessRMClient.scala:64) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at scala.collection.Iterator.foreach(Iterator.scala:943) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.Iterator.foreach$(Iterator.scala:943) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431) ~[scala-library-2.12.17.jar:?]
+	at org.apache.spark.deploy.emrserverless.client.DefaultEmrServerlessRMClient.createContainers(DefaultEmrServerlessRMClient.scala:63) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.requestNewExecutors(ExecutorContainerAllocator.scala:329) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.processSingleResourceProfile(ExecutorContainerAllocator.scala:303) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.$anonfun$processExecutorsForAllResourceProfiles$5(ExecutorContainerAllocator.scala:220) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.$anonfun$processExecutorsForAllResourceProfiles$5$adapted(ExecutorContainerAllocator.scala:217) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.Iterator.foreach(Iterator.scala:943) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.Iterator.foreach$(Iterator.scala:943) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.TraversableLike.map(TraversableLike.scala:286) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.TraversableLike.map$(TraversableLike.scala:279) ~[scala-library-2.12.17.jar:?]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:108) ~[scala-library-2.12.17.jar:?]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.processExecutorsForAllResourceProfiles(ExecutorContainerAllocator.scala:217) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.onNewSnapshot(ExecutorContainerAllocator.scala:157) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.$anonfun$start$1(ExecutorContainerAllocator.scala:88) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.ExecutorContainerAllocator.$anonfun$start$1$adapted(ExecutorContainerAllocator.scala:88) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.store.ExecutorContainerStoreImpl$SnapshotsSubscriber.org$apache$spark$scheduler$cluster$emrserverless$store$ExecutorContainerStoreImpl$SnapshotsSubscriber$$processSnapshotsInternal(ExecutorContainerStoreImpl.scala:190) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.store.ExecutorContainerStoreImpl$SnapshotsSubscriber.processSnapshots(ExecutorContainerStoreImpl.scala:180) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at org.apache.spark.scheduler.cluster.emrserverless.store.ExecutorContainerStoreImpl.$anonfun$addSubscriber$1(ExecutorContainerStoreImpl.scala:58) ~[emr-serverless-spark-goodies-2.11.0.jar:2.11.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) [?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [?:?]
+	at java.lang.Thread.run(Thread.java:840) [?:?]
+24/05/24 06:05:39 INFO DefaultEmrServerlessRMClient: Containers created with container role SPARK_EXECUTOR. key to container id map: Map()
+24/05/24 06:05:40 INFO TaskSetManager: Starting task 73.0 in stage 0.0 (TID 73) ([2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa], executor 3, partition 73, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 58.0 in stage 0.0 (TID 58) in 536 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (62/77)
+24/05/24 06:05:40 INFO TaskSetManager: Starting task 74.0 in stage 0.0 (TID 74) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 74, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 62.0 in stage 0.0 (TID 62) in 402 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (63/77)
+24/05/24 06:05:40 INFO ExecutorContainerAllocator: Set total expected execs to {0=4}
+24/05/24 06:05:40 INFO TaskSetManager: Starting task 75.0 in stage 0.0 (TID 75) ([2406:da18:eeb:a002:674e:5316:fb1e:2f0a], executor 2, partition 75, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 64.0 in stage 0.0 (TID 64) in 398 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (64/77)
+24/05/24 06:05:40 INFO TaskSetManager: Starting task 76.0 in stage 0.0 (TID 76) ([2406:da18:eeb:a002:abe1:b453:abd6:3cda], executor 1, partition 76, PROCESS_LOCAL, 7794 bytes) 
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 72.0 in stage 0.0 (TID 72) in 133 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (65/77)
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 73.0 in stage 0.0 (TID 73) in 84 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (66/77)
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 66.0 in stage 0.0 (TID 66) in 393 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (67/77)
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 67.0 in stage 0.0 (TID 67) in 393 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (68/77)
+24/05/24 06:05:40 INFO ExecutorContainerAllocator: Set total expected execs to {0=3}
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 74.0 in stage 0.0 (TID 74) in 111 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (69/77)
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 75.0 in stage 0.0 (TID 75) in 62 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (70/77)
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 65.0 in stage 0.0 (TID 65) in 432 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (71/77)
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 63.0 in stage 0.0 (TID 63) in 514 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (72/77)
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 76.0 in stage 0.0 (TID 76) in 81 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (73/77)
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 68.0 in stage 0.0 (TID 68) in 406 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (74/77)
+24/05/24 06:05:40 INFO ExecutorContainerAllocator: Set total expected execs to {0=1}
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 70.0 in stage 0.0 (TID 70) in 347 ms on [2406:da18:eeb:a002:674e:5316:fb1e:2f0a] (executor 2) (75/77)
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 71.0 in stage 0.0 (TID 71) in 359 ms on [2406:da18:eeb:a002:abe1:b453:abd6:3cda] (executor 1) (76/77)
+24/05/24 06:05:40 INFO TaskSetManager: Finished task 69.0 in stage 0.0 (TID 69) in 481 ms on [2406:da18:eeb:a002:b6e5:8cc9:d9da:2fa] (executor 3) (77/77)
+24/05/24 06:05:40 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+24/05/24 06:05:40 INFO DAGScheduler: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0) finished in 4.127 s
+24/05/24 06:05:40 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+24/05/24 06:05:40 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+24/05/24 06:05:40 INFO DAGScheduler: Job 0 finished: parquet at NativeMethodAccessorImpl.java:0, took 4.188169 s
+24/05/24 06:05:40 INFO ExecutorContainerAllocator: Set total expected execs to {0=0}
+24/05/24 06:05:40 INFO InMemoryFileIndex: It took 4567 ms to list leaf files for 77 paths.
+24/05/24 06:05:40 INFO SparkContext: SparkContext is stopping with exitCode 0.
+24/05/24 06:05:40 INFO SparkUI: Stopped Spark web UI at http://[2406:da18:eeb:a002:7188:2140:6636:d222]:4040
+24/05/24 06:05:40 INFO EmrServerlessClusterSchedulerBackend: Shutting down all executors
+24/05/24 06:05:40 INFO EmrServerlessClusterSchedulerBackend$EmrServerlessDriverEndpoint: Asking each executor to shut down
+24/05/24 06:05:40 INFO TimeBasedRotatingEventLogFilesWriter: Renaming file:/var/log/spark/apps/eventlog_v2_00fjie01p5u0u027/00fjie01p5u0u027.inprogress to file:/var/log/spark/apps/eventlog_v2_00fjie01p5u0u027/events_1_00fjie01p5u0u027
+24/05/24 06:05:40 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+24/05/24 06:05:40 INFO MemoryStore: MemoryStore cleared
+24/05/24 06:05:40 INFO BlockManager: BlockManager stopped
+24/05/24 06:05:40 INFO BlockManagerMaster: BlockManagerMaster stopped
+24/05/24 06:05:40 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+24/05/24 06:05:40 INFO SparkContext: Successfully stopped SparkContext
+24/05/24 06:05:40 INFO ShutdownHookManager: Shutdown hook called
+24/05/24 06:05:40 INFO ShutdownHookManager: Deleting directory /tmp/spark-c9df07aa-a11e-49ab-bab2-66ee721ed56b/pyspark-ee6550db-3e28-475a-b2c3-b48830470f8f
+24/05/24 06:05:40 INFO ShutdownHookManager: Deleting directory /tmp/spark-a72528cf-7d86-4c35-b1de-d8483798e1fd
+24/05/24 06:05:40 INFO ShutdownHookManager: Deleting directory /tmp/spark-c9df07aa-a11e-49ab-bab2-66ee721ed56b
+
+
+1
